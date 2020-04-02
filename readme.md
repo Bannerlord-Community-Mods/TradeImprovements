@@ -6,6 +6,8 @@ It overrides the `InventoryGauntletScreenOverride` class with a mirror like clas
 
 A better way of doing this would be to override the _dataSource type `SPInventoryVM` and do the changes on refresh. However, a simple class `SPInventoryVMOverride` that extends `SPInventoryVM` with no extra logic caused tooltips and other ui elements to misbehave.
 
-## Features ideas
+## Features
+- [x] Append margin to TextDescription
+- [ ] Move margin to a margin column
 - [ ] Sort items by margin column
 - [x] Feature Switch using WholeSeller perk
