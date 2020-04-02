@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ViewModelCollection;
+using TaleWorlds.Engine.Screens;
 using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
 
 namespace TradeImprovements
 {
@@ -18,8 +21,13 @@ namespace TradeImprovements
         {
             if (!_gameLoaded) return;
             
-            AddMarginsToItems(dataSource.RightItemListVM);
-            AddMarginsToItems(dataSource.LeftItemListVM);
+            var hasPerk = Hero.MainHero.GetPerkValue(DefaultPerks.Trade.WholeSeller);
+           
+            if (hasPerk)
+            {
+                AddMarginsToItems(dataSource.RightItemListVM);
+                AddMarginsToItems(dataSource.LeftItemListVM);
+            }
         }
 
         private static void AddMarginsToItems(IEnumerable<SPItemVM> itemList)
@@ -31,7 +39,7 @@ namespace TradeImprovements
                 var currentPrice = item.ItemCost;
                 var margin = CalculateMargin(currentPrice, basePrice);
                 var baseName = baseElement.EquipmentElement.Item.Name;
-                item.ItemDescription = $"{baseName} {margin:+#;-#;+0}%";
+                item.ItemDescription = $"{margin:+#;-#;+0}% {baseName}";
             }
         }
 
