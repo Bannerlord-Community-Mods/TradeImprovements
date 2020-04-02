@@ -6,7 +6,7 @@ using TaleWorlds.Engine.Screens;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
-namespace FeudalQoL
+namespace TradeImprovements
 {
 	public class Main : MBSubModuleBase
 	{
