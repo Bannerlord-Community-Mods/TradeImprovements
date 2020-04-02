@@ -226,13 +226,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InventoryOverride.cs" />
-    <Compile Include="Main.cs" />
+    <Compile Include="MainApp.cs" />
+    <Compile Include="SubModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Modules\TradeImprovements\SubModule.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Modules\TradeImprovements\SubModule.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
