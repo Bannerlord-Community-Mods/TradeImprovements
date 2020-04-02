@@ -11,4 +11,4 @@ A better way of doing this would be to override the _dataSource type `SPInventor
 - [ ] Move margin to a margin column
 - [ ] Sort items by margin column
 - [x] Feature Switch using WholeSeller perk
-- [ ] Release to [bannerlord.mod.io](https://bannerlord.mod.io/)
+- [x] Release to [bannerlord.mod.io](https://bannerlord.mod.io/)
