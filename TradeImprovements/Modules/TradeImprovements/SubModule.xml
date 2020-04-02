@@ -1,0 +1,22 @@
+ <Module>
+     <Name value="TradeImprovements Mod"/>
+     <Id value="TradeImprovements"/>
+     <Version value="v1.0.0"/>
+     <SingleplayerModule value="true"/>
+     <MultiplayerModule value="false"/>
+     <DependedModules>
+         <DependedModule Id="Native"/>
+     </DependedModules>
+     <SubModules>
+         <SubModule>
+             <Name value="TradeImprovements"/>
+             <DLLName value="TradeImprovements.dll"/>
+             <SubModuleClassType value="TradeImprovements.SubModule"/>
+             <Tags>
+                 <Tag key="DedicatedServerType" value="none" />
+                 <Tag key="IsNoRenderModeElement" value="false" />
+             </Tags>
+         </SubModule>
+     </SubModules>
+     <Xmls/>
+ </Module>
